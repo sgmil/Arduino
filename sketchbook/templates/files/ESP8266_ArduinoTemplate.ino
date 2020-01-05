@@ -12,10 +12,9 @@
 #include "My_ESP8266_Functions.h"
 #include <Arduino.h>
 #include <string.h>
+
 using namespace std;
-
 static string IP = IP_ADDRESS;
-
 
 //Function Prototypes//
 
@@ -28,10 +27,12 @@ MyWiFi wifi("ESP8266",IP);
 
 void setup(void)
 {
-
+    Serial.begin(115200);
+    wifi.connectWiFi();
+    wifi.myOTAsetup();
 }
 
 void loop(void)
 {
-
+    wifi.myOTAhandle();
 }
