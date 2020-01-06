@@ -7,31 +7,25 @@
  * the above defines. Enter board definition,
  * the static IP address to be assigned,
  * and the port where board is attached.
- *
+ * These headers are stripped by bash script 
+ * to provide arguments to arduino-cli.
 */
-#include "My_ESP8266_Functions.h"
+#include "My_ESP8266_Functions.h" // set up wifi, thingspeak, OTA upload
 #include <Arduino.h>
-#include <string.h>
+#include <string.h>               // to manipulate IP address in My_ESP8266_Functions
 
 using namespace std;
-static string IP = IP_ADDRESS;
-
 //Function Prototypes//
 
-
 //Variables//
-
-
-//Instantiations
-MyWiFi wifi("ESP8266",IP);
+static string IP = IP_ADDRESS;  // C++ string needed for setting up wifi
+MyWiFi wifi("ESP8266",IP);      
 
 void setup(void)
 {
-    Serial.begin(115200);
     wifi.connectWiFi();
-    wifi.myOTAsetup();
+    wifi.myOTAsetup();      // makes OTA upload possibe
 }
-
 void loop(void)
 {
     wifi.myOTAhandle();
