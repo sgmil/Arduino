@@ -11,4 +11,4 @@ boardfile=$(echo $board | sed s/:/./g | sed 's/\"//g')
 echo "$boardfile"
 echo "$directory"/"$stripped_file"."$boardfile".bin
 
-python3 ~/SharedDocs/Arduino/ESPOTA.py -d -i "$IP" -f "$directory"/"$stripped_file"."$boardfile".bin
+python3 ~/SharedDocs/Arduino/scripts/ESPOTA.py -d -i "$IP" -f "$directory"/"$stripped_file"."$boardfile".bin
