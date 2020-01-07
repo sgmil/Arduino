@@ -7,4 +7,4 @@ echo "$board"
 IP=$(sed -n '3p' < "$file" | sed 's/#define IP_ADDRESS //g' | sed 's/\"//g')
 echo "$IP"
 
-~/bin/arduino-cli compile --fqbn "$board" "$directory"
+~/bin/arduino-cli compile -v --fqbn "$board" "$directory"

@@ -1,4 +1,4 @@
-// {filename} Copyright {date} {developer}
+// {filename} // Copyright {date} {developer}
 #define BOARD "avr:avr:uno"
 #define IP_ADDRESS ""
 #define PORT "/dev/ttyUSB0"
@@ -11,15 +11,11 @@
 
 #include <Arduino.h>
 
-using namespace std;
-
-//Function Prototypes//
+//  Function Prototypes
 
 
-//Variables//
+//  Variables
 
-
-//Instantiations
 
 void setup(void)
 {
