@@ -1,0 +1,9 @@
+[user]
+	email = smilheim@gmail.com
+	name = sgmil
+[core]
+	editor = vim
+	excludesfile = /home/sgmil/.gitignore
+[merge]
+	tool = meld
+
