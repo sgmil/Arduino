@@ -13,7 +13,7 @@ def postjsonHandler():
     print (request.is_json)
     content = request.get_json()
     print (content)
-    print (content[1]["location"])
+    #print (content[1]["location"])
     return 'JSON posted'
     
 if __name__ == "__main__":
