@@ -20,17 +20,17 @@ indent_mode=2
 [project]
 name=PythonTemps
 base_path=/home/sgmil/SharedDocs/Arduino/Python
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=2
-FILE_NAME_0=1869;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FPython_Server_Temp_Probe.py;0;4
-FILE_NAME_1=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FSteveSensorNetwork.02b.py;0;4
-FILE_NAME_2=148;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FTest_SMTP.py;0;4
-FILE_NAME_3=374;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FSMPT_Real_Python.py;0;4
+current_page=0
+FILE_NAME_0=1771;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FPython_Server_Temp_Probe.py;0;4
+FILE_NAME_1=738;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FSMPT_Real_Python.py;0;4
+FILE_NAME_2=18863;Python;0;EUTF-8;0;1;0;%2Fhome%2Fsgmil%2FSharedDocs%2FArduino%2FPython%2FSteveSensorNetwork.02b.py;0;4
 
 [VTE]
 last_dir=/home/sgmil/SharedDocs/Arduino/Python

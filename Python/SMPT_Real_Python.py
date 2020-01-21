@@ -3,7 +3,10 @@
 #
 #  SMPT_Real_Python.py
 #  Copyright 2020-01-19 Stephen Milheim
-
+# Here are the email package modules we'll need
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 import smtplib, ssl
 def main():
 
@@ -12,18 +15,31 @@ def main():
     sender_email = "bozemanraspberrypi@gmail.com"
     receiver_email = "smilheim@gmail.com"
     password = "Jetson2013"
-    message = """\
+    m = MIMEMultipart()
+    m['Subject'] = "Testing"
+    m['From'] = sender_email
+    m['To'] = receiver_email
+    html = """\
+    <html>
+        <body>
+            <p>Hi, {}</p>
+        </body>
+    </html>
+    """.format(receiver_email)
+    my_message = """\
     Temperature Monitors
 
     This message is sent from Python."""
 
     context = ssl.create_default_context()
+    txt = MIMEText(html,"html") #(my_message)
+    m.attach(txt)
     with smtplib.SMTP(smtp_server, port) as server:
 
         server.starttls(context=context)
 
         server.login(sender_email, password)
-        server.sendmail(sender_email, receiver_email, message)
+        server.sendmail(sender_email, receiver_email, m.as_string())
         server.quit()
     return 0
 
