@@ -19,7 +19,7 @@ indent_mode=2
 
 [project]
 name=geanyTemplate
-base_path=/home/sgmil/SharedDocs/Arduino/sketchbook
+base_path=/home/sgmil/SharedDocs/Arduino/sketchbook/AnalogOutput
 description=
 file_patterns=
 
