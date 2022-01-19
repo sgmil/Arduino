@@ -18,8 +18,8 @@ detect_indent_width=false
 indent_mode=2
 
 [project]
-name=geanyTemplate
-base_path=/home/sgmil/SharedDocs/Arduino/sketchbook/AnalogOutput
+name=
+base_path=/home/sgmil/SharedDocs/Arduino/sketchbook/
 description=
 file_patterns=
 
@@ -31,25 +31,7 @@ long_line_column=72
 current_page=0
 
 [build-menu]
-filetypes=Arduino;
-NF_03_LB=
-NF_03_CM=
-NF_03_WD=
-EX_00_LB=
-EX_00_CM=
-EX_00_WD=
-ArduinoFT_00_LB=_Compile Arduino
-ArduinoFT_00_CM=sh ~/SharedDocs/Arduino/scripts/ArduinoCompile.sh %d %f
-ArduinoFT_00_WD=
-ArduinoFT_01_LB=_Upload Arduino
-ArduinoFT_01_CM=sh ~/SharedDocs/Arduino/scripts/ArduinoUpload.sh %d %f 
-ArduinoFT_01_WD=
-ArduinoFT_02_LB=_Check Board
-ArduinoFT_02_CM=arduino-cli board list
-ArduinoFT_02_WD=
-EX_01_LB=
-EX_01_CM=
-EX_01_WD=
+filetypes=Arduino;C++;
 NF_00_LB=_Wifi_Upload
 NF_00_CM= sh  ~/SharedDocs/Arduino/scripts//ArduinoOTAupload.sh %d %f %e
 NF_00_WD=
