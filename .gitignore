@@ -1,3 +1,7 @@
 *.pdf
 sketchbook
 processing*
+Python
+kicad
+libraries/Adafruit_BusIO libraries/Adafruit_SHT31_Library libraries/readme.txt libraries/ThingSpeak
+libraries
